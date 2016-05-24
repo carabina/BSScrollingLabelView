@@ -18,7 +18,7 @@
     CGRect bounds = [self boundingRectWithSize:constraintSize options:options attributes:attributes context:nil];
     size = bounds.size;
 #else
-    size = [self sizeWithFont:font constrainedToSize:constraint lineBreakMode:NSLineBreakByCharWrapping];
+    size = [self sizeWithFont:font constrainedToSize:constraintSize lineBreakMode:NSLineBreakByCharWrapping];
 #endif
     return size;
 }
