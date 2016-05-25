@@ -16,7 +16,6 @@
 @property (weak, nonatomic) IBOutlet BSCycleTextView *cycleTextView3;
 @property (weak, nonatomic) IBOutlet BSCycleTextView *cycleTextView4;
 
-
 @end
 
 @implementation ViewController
