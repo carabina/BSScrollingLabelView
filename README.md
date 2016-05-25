@@ -34,6 +34,8 @@ This is a view that cycle scroll the text, but not cycle scroll the UITextView
     
 ### Optional properties
 ```objective-c
+@interface BSCycleTextView : UIView
+
 ///default is 25
 @property (assign, nonatomic) CGFloat gradientWidth;
 
@@ -51,4 +53,6 @@ This is a view that cycle scroll the text, but not cycle scroll the UITextView
 
 ///default is [UIColor whiteColor]
 @property (strong, nonatomic) UIColor *textColor;
+
+@end
 ```
