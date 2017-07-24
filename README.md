@@ -1,5 +1,5 @@
-# BSCycleTextView
-This is a view that cycle scroll the text, but not cycle scroll the UITextView
+# BSScrollingLabelView
+This is a view that cycle scroll the label if the label's width is larget than view
 
 ## Overview
 
@@ -7,52 +7,28 @@ This is a view that cycle scroll the text, but not cycle scroll the UITextView
 
 ## Installation
 
-> pod 'BSCycleTextView'
-
-## Usage
-
-### Pretty simple
-
+> pod 'BSScrollingLabelView', '1.0.0'
+ 
+## Supported properties
 ```objective-c
-@interface ViewController ()
-
-@property (weak, nonatomic) IBOutlet BSCycleTextView *cycleTextView1;
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    _cycleTextView1.text = @"What is design";
-
-}
-
-@end
-```
-    
-### Optional properties
-```objective-c
-@interface BSCycleTextView : UIView
-
 ///default is 25
-@property (assign, nonatomic) CGFloat gradientWidth;
+@property (nonatomic) IBInspectable CGFloat gradientWidth;
 
 ///default is 20
-@property (assign, nonatomic) CGFloat spacing;
+@property (nonatomic) IBInspectable CGFloat labelSpacing;
 
 ///default is 50
-@property (assign, nonatomic) CGFloat velocity;
+@property (nonatomic) IBInspectable CGFloat velocity;
 
 ///default is 4
-@property (assign, nonatomic) NSTimeInterval timeInterval;
+@property (nonatomic) IBInspectable NSTimeInterval stayTimeInterval;
 
-///default is system font ,size 26
-@property (strong, nonatomic) UIFont *font;
+///default is system font ,size 17
+@property (nullable, nonatomic, strong) UIFont *font;
 
-///default is [UIColor whiteColor]
-@property (strong, nonatomic) UIColor *textColor;
+@property (nullable, nonatomic, strong) IBInspectable UIColor *textColor;
 
-@end
+@property (nullable, nonatomic, copy) IBInspectable NSString *text;
+@property (nullable, nonatomic, copy) NSAttributedString *attributedText;
+
 ```
