@@ -3,7 +3,7 @@ This is a view that cycle scroll the label if the label's width is larget than v
 
 ## Overview
 
-![BSCycleTextView.gif](https://github.com/blurryssky/BSCycleTextView/blob/master/ScreenShots/BSCycleTextView.gif)
+![BSScrollingLabelView.gif](https://github.com/blurryssky/BSScrollingLabelView/blob/master/Screenshots/BSScrollingLabelView.gif)
 
 ## Installation
 
